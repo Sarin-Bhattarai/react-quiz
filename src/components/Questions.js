@@ -1,7 +1,11 @@
-function Questions() {
+import Options from "./Options";
+
+function Questions({ question, dispatch, answer }) {
+  console.log(question);
   return (
     <div>
-      <h2>fff</h2>
+      <h4>{question.question}</h4>
+      <Options question={question} dispatch={dispatch} answer={answer} />
     </div>
   );
 }
